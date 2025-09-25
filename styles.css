@@ -16,7 +16,16 @@ a{
 .headline{
     background-color:rgb(0, 139, 139);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headleft{
+    padding-left: 1%;
+}
+
+.headright{
+    padding-right: 1%;
 }
 
 .container{
