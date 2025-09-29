@@ -1,49 +1,98 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    background-color:rgb(56, 56, 56);
-    padding: 0;
-    margin: 0;
+body {
+  background-color: rgb(56, 56, 56);
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
-    color: black
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.headline{
-    background-color:rgb(0, 139, 139);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.headline {
+  background-color: rgb(0, 139, 139);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.headleft{
-    padding-left: 1%;
+.headleft {
+  padding-left: 1%;
 }
 
-.headright{
-    padding-right: 1%;
+.headright {
+  padding-right: 1%;
 }
 
-.container{
-    display: flex;
-    background-color:rgb(56, 56, 56);
-    padding: 10px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  background-color: rgb(56, 56, 56);
+  padding: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.box{
-    background-color: rgb(154, 154, 154);
-    width: 20%;
-    padding: 10px;
-    border-radius: 2vw;
-    border: 2px solid rgb(0, 139, 139);
+.box {
+  background-color: rgb(154, 154, 154);
+  width: 20%;
+  border-radius: 2vw;
+  border: 2px solid rgb(0, 139, 139);
+  background-size: cover; /* scale image to cover the div */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* don’t tile the image */
 }
 
+.art .box {
+  height: 20vw;
+}
+
+.art .box h1,
+.art .box p {
+  display: flex; /* makes layout cleaner */
+  flex-direction: column; /* stack h1 and p */
+  margin: 0;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+#box1 {
+  background-image: url("miku1.webp");
+}
+
+#box2 {
+  background-image: url("miku2.webp");
+}
+
+#box3 {
+  background-image: url("miku3.webp");
+}
+
+a.link {
+  display: flex; /* makes layout cleaner */
+  flex-direction: column; /* stack h1 and p */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: calc(
+    2vw - 2px
+  ); /* match box rounding border-radius - border */
+  /* folowing row is to se the clickable area */
+  /* background-color: blue; */
+}
+
+.box a.link:hover {
+  background-color: rgb(0, 139, 139);
+}
+
+a.link h1,
+a.link p {
+  margin: 0;
+}
+
+/* saved in case i nedd */
 @media screen and (max-width: 1200px) {
-    
 }
